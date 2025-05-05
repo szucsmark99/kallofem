@@ -10,5 +10,5 @@ Ez a scraper a [kallofem.hu](https://kallofem.hu/shop/group/keriteselemek) websh
 
 1. Klónozd a repository-t
 
-2. Telepítsd a függőségeket:
+2. Telepítsd a függőségeket
 
