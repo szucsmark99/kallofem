@@ -5,7 +5,7 @@ class TermekekSpider(scrapy.Spider):
     start_urls = ["https://kallofem.hu/shop/group/keriteselemek"]
 
     def parse(self, response):
-        for termek in response.css('div.col-6.col-md-3'):
+        for termek in response.css('article.product-row'):
             yield {
                 'termeknev': termek.css('h4::text').get(default='').strip(),
                 'ar': termek.css('span.product-price::text').get(default='').strip(),
